@@ -63,7 +63,7 @@ classes are located under `physx-jni/src/main/generated`.
 
 ### Supported platforms:
 - Windows (x86_64)
-- Linux (x86_64)
+- Linux (x86_64, and arm64)
 - MacOS (x86_64, and arm64)
 - Android (arm-v8 (aarch64) only for now)
  
