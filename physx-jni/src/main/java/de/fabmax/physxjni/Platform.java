@@ -28,7 +28,8 @@ public enum Platform {
             throw new IllegalStateException("Android environment detected. Use 'physx-jni-android' library instead of regular 'physx-jni'");
         } else if (osName.contains("windows")) {
             return WINDOWS;
-        } else if ("aarch64".equals(arch) || "arm64".equals(arch)) {
+        } else if (osName.contains("linux")) {
+            if ("aarch64".equals(arch)) {
                 return LINUX_ARM64;
             } else {
                 return LINUX;
